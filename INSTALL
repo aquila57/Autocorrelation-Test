@@ -1,0 +1,31 @@
+Installing autocorrelation test programs:
+
+The following dependencies are used by the programs in this
+repository.
+
+GNU Scientific Library.
+
+sudo apt-get install libgsl2
+sudo apt-get install libgsl-dev
+sudo apt-get install gsl-ref-html
+
+dieharder package.
+
+sudo apt-get install dieharder
+sudo apt-get install libdieharder-dev
+sudo apt-get install libdieharder3
+
+Make shell scripts executable.
+
+chmod 755 *.sh
+
+Next compile the programs.
+
+./inst.sh
+
+To de-install the template repository:
+
+./deinst.sh
+
+To see how to test autocorrelation programs, read TESTING.
+

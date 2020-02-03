@@ -1,0 +1,50 @@
+Bucknell write up on the autocorrelation test.
+
+https://www.eg.bucknell.edu/~xmeng/Course/CS6337/
+Note/master/node45.html
+
+Aritzhaupt
+
+http://aritzhaupt.com/resource/autocorrelation/
+
+NCSS Spearman's Rank Correlation test
+
+https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/
+Procedures/PASS/Spearmans_Rank_Correlation_Tests-Simulation.pdf
+
+statistics howto
+
+https://www.statisticshowto.datasciencecentral.com/
+serial-correlation-autocorrelation/
+
+NIST
+Based on Box and Jenkins 1976
+
+https://itl.nist.gov/div898/handbook/eda/section3/eda35c.htm
+
+Java
+
+https://techmightsolutions.blogspot.com/2013/05/
+autocorrelation-random-number-test-with.html
+
+University of Wisconsin
+
+http://pages.stat.wisc.edu/~larget/math496/random.html
+
+R test
+
+https://www.rdocumentation.org/packages/EnvStats/
+versions/2.3.1/topics/serialCorrelationTest
+
+Western Michigan University
+
+https://cs.wmich.edu/alfuqaha/Spring10/cs6910/lectures/Chapter7.pdf
+
+Page 10 has autocorrelation formulae
+
+i + (M + 1)m <= N
+
+solve for M, given i, m, and N
+
+
+

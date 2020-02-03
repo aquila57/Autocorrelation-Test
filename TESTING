@@ -1,0 +1,193 @@
+Testing instructions for all the autocorrelation programs
+in this repository.
+
+Read REFERENCES for information about the autocorrelation test.
+
+Each program in this repository reads two parameters, which
+are the index and the lag.
+
+--------
+
+Program by program testing instructions.
+
+Fibonacci random number generator
+
+Run fibocorr to apply the autocorrelation test to the fibonacci
+random number generator.  There are two parameters.
+
+./fibocorr index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./fibocorr 3 5
+
+This program is expected to pass the test.
+
+--------
+
+64 bit LFSR random number generator
+
+Run lfsrcorr to apply the autocorrelation test to the 64 bit
+LFSR random number generator.  There are two parameters.
+
+./lfsr index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./lfsrcorr 3 5
+
+The expected result from this program is a failing P-value
+of 0.0.
+
+--------
+
+32 bit RANDU random number generator
+
+Run randu to apply the autocorrelation test to the 32 bit
+RANDU random number generator.  There are two parameters.
+
+./rucorr index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./rucorr 3 5
+
+The expected result from this program is a passing P-value.
+
+--------
+
+eegl64 random number generator
+
+Run corr to apply the autocorrelation test to the eegl64
+uniform random number generator.  There are two parameters.
+
+./corr index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./corr 3 5
+
+This test is expected to pass.
+
+--------
+
+etaus random number generator
+
+Run etauscorr to apply the autocorrelation test to the etaus
+uniform random number generator.  There are two parameters.
+
+./etauscorr index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./etauscorr 3 5
+
+This test is expected to pass.
+
+--------
+
+GNU Scientific Library random number generators
+
+Run tstgsl.sh to apply the autocorrelation test to the GNU
+Scientific Library collection of random number generators.
+There are three parameters, the index, the lag, and the name
+of the GSL generator.
+
+./tstgsl.sh index lag RNG_name 
+
+Example,
+
+./tstgsl.sh 3 5 taus2
+
+This example runs the autocorrelation test on the GSL taus2
+random number generator.
+
+To find a list of valid GSL random number generators, enter
+a parameter that produces an error.
+
+./tstgsl.sh 3 5 ?
+
+This test is expected to pass the test except for the uni
+generator.
+
+To run a test of all GSL generators, run runall.sh.
+
+./runall.sh index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./runall.sh 3 5
+
+Read the results of this test by browsing allgsl.out.
+This test reads allgsl.lst as an input file.
+
+--------
+
+Dieharder package random number generators
+
+Run tstdie.sh to apply the autocorrelation test to the
+dieharder collection of random number generators.  There are
+three parameters, the index, the lag, and the id of the
+dieharder generator.
+
+./tstdie.sh index lag RNG_number
+
+Example,
+
+./tstdie.sh 3 5 053
+
+This example runs the autocorrelation test on the dieharder
+taus2 random number generator.
+
+To find a list of valid dieharder random number generators,
+enter the following dieharder command.
+
+dieharder -g -l
+
+This test is expected to pass the test except for the uni
+generator.
+
+To run a test of all dieharder generators, run dieall.sh.
+
+./dieall.sh index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./dieall.sh 3 5
+
+Read the results of this test by browsing alldie.out.
+This test reads alldie.lst as an input file.
+
+--------
+
+Submit more autocorrelation tests.
+
+If you have a random number generator not included in this
+repository, you are welcome to add more autocorrelation test
+programs to this repository.
+
+--------
+
+Read REFERFENCES for information about the autocorrelation test.
+Read INSTALL for installing this repository.
