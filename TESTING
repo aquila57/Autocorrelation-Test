@@ -33,7 +33,7 @@ This program is expected to pass the test.
 Run lfsrcorr to apply the autocorrelation test to the 64 bit
 LFSR random number generator.  There are two parameters.
 
-./lfsr index lag
+./lfsrcorr index lag
 
 Where index is the starting offset and lag is the space
 between two sample digits.
@@ -62,6 +62,25 @@ Example:
 ./rucorr 3 5
 
 The expected result from this program is a passing P-value.
+
+--------
+
+Sine wave random number generator
+
+Run randu to apply the autocorrelation test to the sine wave
+random number generator.  There are two parameters.
+
+./sinecorr index lag
+
+Where index is the starting offset and lag is the space
+between two sample digits.
+
+Example:
+
+./sinecorr 3 5
+
+The expected result from this program is a failing p-value
+of 0.0.
 
 --------
 
